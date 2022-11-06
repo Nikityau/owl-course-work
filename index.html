@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тест</title>
+    <link rel="icon" type="image/x-icon" href="./src/assets/icons/owl.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/styles/default.css">
+    <link rel="stylesheet" href="./src/styles/app.css">
+    <link rel="stylesheet" href="./src/styles/tab.css">
+    <link rel="stylesheet" href="./src/styles/tabs.css">
+</head>
+<body>
+<div class="app">
+    <div class="app__container">
+        <div class="start-tab tab tab_current"
+             data-tab-slug="entry-tab"
+             data-tab-slug-next="start-test-tab"
+             style="background-image: url('./src/assets/background/start-tab.png')">
+            <div class="start-tab__title">
+                <h1 class="tab__text tab__text_size_s">Тесты</h1>
+            </div>
+            <div class="start-tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="owl-logo">
+            </div>
+        </div>
+        <div class="start-test-tab tab"
+             data-tab-slug="start-test-tab"
+             data-tab-slug-next="test-tab-1-12"
+             style="background-image: url('./src/assets/background/start-test-tab.png')">
+            <div class="start-tab__title">
+                <h3 class="tab__text tab__text_size_m tab__text_center">Тест который покажет уровень вашего
+                    интеллекта</h3>
+            </div>
+            <div class="start-test-tab__btn start-test-tab__btn-start tab__text_left">
+                <p class="tab__text tab__text_size_m">Проверь свой</p>
+                <p class="tab__text tab__text_size_m">интеллект</p>
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-1-12"
+             data-tab-slug-next="test-tab-2-12"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-1.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 1/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_m tab__text_center">Когда была создана “Википедия”?</p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">В 1995 году</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer" >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                               <span class="tab__text tab__text_size_sm">В 1999 году</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text"
+                                data-right-answer="true"
+                            >
+                                <span class="tab__text tab__text_size_sm">В 2001 году</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">В 2006 году</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-2-12"
+             data-tab-slug-next="test-tab-3-12"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-2.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 2/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_m tab__text_center">
+                            Почему “Википедия” так называется?
+                        </p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Просто так</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer" >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text tab__text_center">
+                               <span class="tab__text tab__text_size_sm">В честь жены создателя “Википедии”</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer"
+                             data-right-answer="true"
+                        >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text tab__text_center">
+                                <span class="tab__text tab__text_size_sm">От гавайского слова “вики”, обозначающего “быстрый”</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text tab__text_center">
+                                <span class="tab__text tab__text_size_sm">В честь технологии хранения данных</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-3-12"
+             data-tab-slug-next="test-tab-4-12"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-3.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 3/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_sm tab__text_center">
+                            Где была создана самая большая неэлектронная энциклопедия в истории человечеста?
+                        </p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">США</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer" >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                               <span class="tab__text tab__text_size_sm">Франция</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Великобритания</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer"
+                             data-right-answer="true"
+                        >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Китай</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-4-12"
+             data-tab-slug-next="test-tab-5-12"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-4.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 4/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_sm tab__text_center">
+                            Сколько всего планет в Солнечной системе?</p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">8</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer" >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                               <span class="tab__text tab__text_size_sm">9</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer"
+                             data-right-answer="true"
+                        >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">13</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-5-12"
+             data-tab-slug-next="test-tab-6-12"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-5.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 5/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_sm tab__text_center">
+                            Во сколько раз объём Луны меньше земного?</p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Вдвое</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer" >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                               <span class="tab__text tab__text_size_sm">В 5</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer"
+                             data-right-answer="true"
+                        >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">В 50</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">В 100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-6-12"
+             data-tab-slug-next="test-tab-7-12"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-6.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 6/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_sm tab__text_center">
+                            У какой из планет земной группы нет магнитного поля?</p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Меркурий</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer" >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                               <span class="tab__text tab__text_size_sm">Венера</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Земля</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer"
+                             data-right-answer="true"
+                        >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Марс</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-7-12"
+             data-tab-slug-next="test-tab-8-12"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-7.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 7/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_sm tab__text_center">
+                            Какое из этих слов никак не связано с другими?</p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer"
+                             data-right-answer="true"
+                        >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Красиво</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer" >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                               <span class="tab__text tab__text_size_sm">Облако</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Кошка</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-8-12"
+             data-tab-slug-next="test-tab-9-12"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-8.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 8/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_sm tab__text_center">
+                            Утюг относится к технике, как серьги к ...</p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">К уху</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer" >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                               <span class="tab__text tab__text_size_sm">К подарку</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer"
+                             data-right-answer="true"
+                        >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">К ювелирным изделиям</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-9-12"
+             data-tab-slug-next="test-tab-10-12"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-9.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 9/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_sm tab__text_center">
+                            Без 15 пять - это 45 минут четвертого...</p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Верно</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer"
+                             data-right-answer="true"
+                        >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                               <span class="tab__text tab__text_size_sm">Неверно</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-10-12"
+             data-tab-slug-next="test-tab-11-12"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-10.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 10/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_sm tab__text_center">
+                            Продолжи последовательность 1, 2, 4, 7, 11...</p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">8</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer"
+                             data-right-answer="true"
+                        >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                               <span class="tab__text tab__text_size_sm">16</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">14</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-11-12"
+             data-tab-slug-next="test-tab-12-12"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-11.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 11/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_sm tab__text_center">
+                            Какое из этих слов лишнее?</p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Вежливый</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer"
+                             data-right-answer="true"
+                        >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                               <span class="tab__text tab__text_size_sm">Красивый</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">Ответственный</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="test-tab tab"
+             data-tab-slug="test-tab-12-12"
+             data-tab-slug-next="result-tab"
+             data-tab-set-ev-handler="true"
+             style="background-image: url('./src/assets/background/q-12.png')"
+        >
+            <div class="test-tab__container">
+                <div class="test-tab__question-block">
+                    <div class="test-tab__question-number test-tab__q_side_offsets">
+                        <h3 class="tab__text tab__text_size_m">Вопрос 12/12</h3>
+                    </div>
+                    <div class="test-tab__hor-line">
+                    </div>
+                    <div class="test-tab__question test-tab__q_side_offsets test-tab__q_side_offsets_no_top">
+                        <p class="tab__text tab__text_size_sm tab__text_center">
+                            У трёх кошек и двух уток в сумме получается...</p>
+                    </div>
+                </div>
+                <div class="test-tab__answers-block">
+                    <div class="test-tab__answers-container">
+                        <div class="test-tab__answer">
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">14 пар лап</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer" >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                               <span class="tab__text tab__text_size_sm">16 пар лап</span>
+                            </div>
+                        </div>
+                        <div class="test-tab__answer"
+                             data-right-answer="true"
+                        >
+                            <div class="test-tab__answer-dot">
+                                <div class="test-tab__answer-dot-inner"></div>
+                            </div>
+                            <div class="test-tab__answer-text">
+                                <span class="tab__text tab__text_size_sm">8 пар лап</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab__logo">
+                <img src="./src/assets/icons/owl.png" alt="logo">
+            </div>
+        </div>
+        <div class="result-tab tab"
+             data-tab-slug="result-tab"
+             data-tab-slug-next="start-test-tab"
+             style="background-image: url('./src/assets/background/result.png')"
+        >
+           <div class="result-tab__container">
+               <div class="result-tab__title">
+                   <span class="tab__text tab__text_size_s">Ваши результаты:</span>
+               </div>
+               <div class="result-tab__text-info">
+                    <p class="result-tab__text tab__text tab__text_size_sm">
+
+                    </p>
+               </div>
+               <div class="result-tab__btn result-tab__btn-repeat">
+                    <span class="tab__text tab__text_size_sm">Повторить</span>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+<script src="src/scripts/tabs.js"></script>
+</body>
+</html>

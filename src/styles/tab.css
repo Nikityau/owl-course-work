@@ -1,0 +1,150 @@
+.tab {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    pointer-events: none;
+    opacity: 0;
+
+    transition: opacity .3s ease-in-out;
+}
+
+.tab__text {
+    font-family: Forum, sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.tab__text_size_s {
+    font-size: 23px;
+}
+
+.tab__text_size_sm {
+    font-size: 30px;
+}
+
+.tab__text_size_m {
+    font-size: 38px;
+}
+
+.tab__text_center {
+    text-align: center;
+}
+
+.tab__text_left {
+    text-align: left;
+}
+
+.tab_current {
+    pointer-events: all;
+
+    opacity: 1;
+}
+
+.tab__logo {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+
+    transform: translate(-50%);
+}
+
+.tab__logo img {
+    width: 93px;
+    height: auto;
+}
+
+.test-tab__container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+}
+
+.test-tab__hor-line {
+    width: 100%;
+    height: 2px;
+    background: rgba(215, 199, 222, 0.64);
+}
+
+.test-tab__q_side_offsets {
+    padding: 46px 42px 0;
+}
+
+.test-tab__q_side_offsets_no_top {
+    padding-top: 0;
+}
+
+.test-tab__question-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.test-tab__question-number {
+}
+
+.test-tab__answers-block {
+    padding: 0 42px;
+}
+
+.test-tab__answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.test-tab__answer {
+    display: grid;
+    grid-template-columns: 20px auto;
+    align-items: center;
+    gap: 11px;
+}
+
+.test-tab__answer-dot,
+.test-tab__answer-text {
+    pointer-events: none;
+}
+
+.test-tab__answer-dot {
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: #fff;
+}
+
+.test-tab__answer-dot-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 17px;
+    height: 17px;
+
+    border-radius: 50%;
+
+    background: var(--color-purple);
+
+    opacity: 0;
+
+    transition: opacity .2s linear;
+}
+
+.test-tab__answer-dot-inner_active {
+    opacity: 1;
+}
+
